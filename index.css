@@ -61,6 +61,12 @@ h2 {
   color: #f0515d;
 }
 
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .devil {
   grid-area: devil;
   height: 100%;

@@ -44,6 +44,23 @@ h2 {
   flex-flow: column;
 }
 
+.links-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.links-wrapper a {
+  color: #ee3a47;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-family: monospace;
+  transition: all 150ms ease-in-out;
+}
+.links-wrapper a:hover {
+  color: #f0515d;
+}
+
 .devil {
   grid-area: devil;
   height: 100%;

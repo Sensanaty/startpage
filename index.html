@@ -14,22 +14,13 @@
     <script src="index.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
+    <script type="module" src="dist/todo-list.min.js"></script>
 </head>
 <body style="background: #272727; color: #f7cb39;">
     <div class="welcome box">
         <div class="name-time">
             <h1>Welcome back, Sensanaty</h1>
             <h2><span class="date"></span> at <span class="time"></span></h2>
-        </div>
-
-
-        <div class="todo">
-            <h1>TODO</h1>
-            <ul>
-                <li>Work on tablevibes</li>
-                <li>Check out issue #136</li>
-                <li>Destroy the decepticons</li>
-            </ul>
         </div>
     </div>
 
@@ -42,7 +33,7 @@
         </div>
     </div>
 
-    <div class="box"></div>
+    <div class="box todo-list"><todo-list style="width: 100%; margin-bottom: auto; grid-area: todo"/></div>
     <img src="./hannya@3x.png"  alt="devil" class="devil">
     <div class="box"></div>
     <div class="box"></div>

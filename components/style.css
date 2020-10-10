@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+.todo-wrapper {
+  height: 100%;
+}
+.todo-wrapper button {
+  background: #ee3a47;
+  border: none;
+  color: #f7cb39;
+  font-size: 1.7em;
+  font-weight: bolder;
+  padding: 9px 12px;
+}
+
+.new-task-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.new-task-wrapper h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.new-task-wrapper input {
+  background: #2f2f2f;
+  color: #fdfdfd;
+  border: none;
+  transition: outline 150ms ease-in-out;
+  outline: 2px solid #272727;
+  padding: 7px 15px;
+  font-size: 1.4em;
+  font-weight: bolder;
+  width: 70%;
+  margin: 5px auto;
+}
+.new-task-wrapper input:focus {
+  outline: 2px solid #ee3a47;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+ul {
+  margin: 25px 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 0;
+  font-size: 1.7em;
+  list-style: none;
+}
+ul li:before {
+  content: "›";
+}
+ul li:after {
+  content: "‹";
+}
+ul li:hover:before {
+  content: "»";
+}
+ul li:hover:after {
+  content: "«";
+}
+
+/*# sourceMappingURL=style.css.map */

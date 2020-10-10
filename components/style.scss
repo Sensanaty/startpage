@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
+.todo-wrapper {
+  height: 100%;
+
+  button {
+    background: #ee3a47;
+    border: none;
+    color: #f7cb39;
+    font-size: 1.7em;
+    font-weight: bolder;
+    padding: 9px 12px;
+  }
+}
+
+.new-task-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  input {
+    background: #2f2f2f;
+    color: #fdfdfd;
+    border: none;
+    transition: outline 150ms ease-in-out;
+    outline: 2px solid #272727;
+    padding: 7px 15px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    width: 70%;
+    margin: 5px auto;
+
+    &:focus {
+      outline: 2px solid #ee3a47;
+    }
+  }
+}
+
+.list-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+ul {
+  margin: 25px 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 1.7em;
+    list-style: none;
+
+    &:before { content: "›"; }
+    &:after { content: "‹"; }
+
+    &:hover {
+      &:before { content: "»" }
+      &:after { content: "«" }
+
+    }
+  }
+}
